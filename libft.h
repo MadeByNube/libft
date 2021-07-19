@@ -6,7 +6,7 @@
 /*   By: cnavarro <cnavarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/09 10:38:10 by cnavarro          #+#    #+#             */
-/*   Updated: 2021/04/07 11:07:03 by cnavarro         ###   ########.fr       */
+/*   Updated: 2021/07/15 11:36:40 by cnavarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,5 +66,8 @@ void			ft_lstclear(t_list **lst, void (*del)(void *));
 void			ft_lstiter(t_list *lst, void (*f)(void *));
 t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
 					void (*del)(void *));
+//Funciones extras
 char			**ft_insert_string(char **table, char *str);
+void			ft_free_matrix(char **matrix);
+char			*ft_strjoinchar(char *s, char c);
 #endif
